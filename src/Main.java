@@ -79,4 +79,5 @@ public class Main {
             System.out.println("2*"+i+"="+(2*i));
         }
     }
+
 }
