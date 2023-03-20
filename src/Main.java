@@ -11,7 +11,6 @@ public class Main {
         task9();
         task10();
     }
-
     public static void task1 () {
         System.out.println("Задача 1");
         for (int i = 1; i <= 10; i++ ){
@@ -39,27 +38,45 @@ public class Main {
     }
     public static void task5 () {
         System.out.println("Задача 5");
-
+        for (int i = 1904; i <= 2096; i+=4 ){
+            System.out.println(i+" год является високосным");
+        }
     }
     public static void task6 () {
         System.out.println("Задача 6");
-
+        for (int i = 7; i <= 98; i+=7 ){
+            System.out.print(i+" ");
+        }
     }
     public static void task7 () {
-        System.out.println("Задача 7");
-
+        System.out.println("\nЗадача 7");
+        for (int i = 1; i <= 512; i*=2 ){
+            System.out.print(i + " ");
+        }
     }
     public static void task8 () {
-        System.out.println("Задача 8");
-
+        System.out.println("\nЗадача 8");
+       int contribution = 29000;
+       int total = 0;
+        for (int i = 1; i <= 12; i++ ){
+            total= total + contribution;
+            System.out.println("За месяц " + i + " накопится:" + total);
+        }
     }
     public static void task9 () {
         System.out.println("Задача 9");
-
+        int contribution = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++ ){
+            total=total+total/100;
+            total= total + contribution;
+            System.out.println("За месяц " + i + " накопится:" + total);
+        }
     }
     public static void task10 () {
         System.out.println("Задача 10");
-
+        for (int i = 1; i <= 10; i++ ){
+            System.out.println("2*"+i+"="+(2*i));
+        }
     }
-
 }
